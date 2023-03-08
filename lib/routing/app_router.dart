@@ -1,13 +1,14 @@
-import 'package:app_cinemovida/routing/scaffold_with_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:app_cinemovida/features/movies/presentation/pages/cinema/screen/cinema_screen.dart';
-import 'package:app_cinemovida/features/movies/presentation/pages/coming-soon/screen/coming-soon_screen.dart';
-import 'package:app_cinemovida/features/movies/presentation/pages/display/screen/display_screen.dart';
-import 'package:app_cinemovida/features/movies/presentation/pages/events/screen/events_screen.dart';
-import 'package:app_cinemovida/features/movies/presentation/pages/tickets/tickets_details/tickets_screen.dart';
+import 'package:app_cinemovida/routing/scaffold_with_bottom_nav_bar.dart';
+import 'package:app_cinemovida/src/features/movies/presentation/pages/cinema/screen/cinema_screen.dart';
+import 'package:app_cinemovida/src/features/movies/presentation/pages/coming-soon/screen/coming-soon_screen.dart';
+import 'package:app_cinemovida/src/features/movies/presentation/pages/display/screen/display_screen.dart';
+import 'package:app_cinemovida/src/features/movies/presentation/pages/events/screen/events_screen.dart';
+import 'package:app_cinemovida/src/features/movies/presentation/pages/tickets/tickets_details/tickets_screen.dart';
+
 
 enum AppRoute {
   onDisplay,
@@ -15,6 +16,7 @@ enum AppRoute {
   events,
   tickets,
   cinema,
+  setting,
 }
 
 // private navigators
