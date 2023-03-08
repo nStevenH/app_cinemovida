@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../routing/app_router.dart';
+import 'package:app_cinemovida/routing/app_router.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
@@ -9,10 +10,14 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final goRouter = ref.watch(goRouterProvider);
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      title: 'Cine Movida',
-      routerConfig: goRouter,
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      builder: (context, child) => MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        title: 'Cine Movida',
+        routerConfig: goRouter,
+      ),
     );
   }
 }
