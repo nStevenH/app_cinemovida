@@ -1,11 +1,10 @@
-
 import 'package:flutter/material.dart';
 
 
 
 
-class LocalisationScreen extends StatelessWidget {
-  const LocalisationScreen({Key? key}) : super(key: key);
+class EventsScreen extends StatelessWidget {
+  const EventsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +12,10 @@ class LocalisationScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: const [
-            Text('Mon cinéma...')
+            Text('Evenements')
           ],
         ),
       ),
-      );
+    );
   }
 }

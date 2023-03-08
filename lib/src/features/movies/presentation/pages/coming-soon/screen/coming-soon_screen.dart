@@ -1,11 +1,12 @@
-
 import 'package:flutter/material.dart';
 
 
 
 
-class EventsScreen extends StatelessWidget {
-  const EventsScreen({Key? key}) : super(key: key);
+
+
+class ComingSoonScreen extends StatelessWidget {
+  const ComingSoonScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class EventsScreen extends StatelessWidget {
       body: Center(
         child: Column(
           children: const [
-            Text('Evenements')
+            Text('A venir...')
           ],
         ),
       ),
