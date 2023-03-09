@@ -41,6 +41,7 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
     return Scaffold(
       body: widget.child,
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.red,
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.yellow,
@@ -65,7 +66,7 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on_outlined),
-            label: 'Mon cinéma',
+            label: 'Cinémas',
           ),
         ],
       ),
