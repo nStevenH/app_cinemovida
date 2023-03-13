@@ -44,7 +44,6 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
       appBar: widget.appBar,
       body: widget.child,
       bottomNavigationBar: BottomNavigationBar(
-
         currentIndex: _selectedIndex,
         onTap: (index) => _tap(context, index),
         items: const [
