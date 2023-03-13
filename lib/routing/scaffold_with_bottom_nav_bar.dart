@@ -1,10 +1,12 @@
 import 'package:app_cinemovida/routing/app_router.dart';
 import 'package:flutter/material.dart';
+
 import 'package:go_router/go_router.dart';
 
 class ScaffoldBottomNavBar extends StatefulWidget {
-  const ScaffoldBottomNavBar({Key? key, required this.child}) : super(key: key);
+  const ScaffoldBottomNavBar({Key? key, required this.child, this.appBar}) : super(key: key);
   final Widget child;
+  final AppBar? appBar;
 
   @override
   State<ScaffoldBottomNavBar> createState() => _ScaffoldBottomNavBarState();
@@ -39,12 +41,10 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: widget.appBar,
       body: widget.child,
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.red,
-        type: BottomNavigationBarType.fixed,
-        unselectedItemColor: Colors.white,
-        selectedItemColor: Colors.yellow,
+
         currentIndex: _selectedIndex,
         onTap: (index) => _tap(context, index),
         items: const [
