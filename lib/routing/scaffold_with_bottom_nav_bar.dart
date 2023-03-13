@@ -1,6 +1,7 @@
+import 'package:app_cinemovida/constants/strings.dart';
+import 'package:app_cinemovida/core/widgets/appbar_widget.dart';
 import 'package:app_cinemovida/routing/app_router.dart';
 import 'package:flutter/material.dart';
-
 import 'package:go_router/go_router.dart';
 
 class ScaffoldBottomNavBar extends StatefulWidget {
@@ -41,7 +42,11 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: widget.appBar,
+      appBar: AppBarWidget(
+          title: Image.asset(logo, fit: BoxFit.contain, width: 24,),
+          icon: Icons.person_outline,
+          onPressed: () {}
+      ),
       body: widget.child,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
