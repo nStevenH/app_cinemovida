@@ -1,3 +1,4 @@
+import 'package:app_cinemovida/theme/theme_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -15,6 +16,7 @@ class MyApp extends ConsumerWidget {
       minTextAdapt: true,
       builder: (context, child) => MaterialApp.router(
         debugShowCheckedModeBanner: false,
+        theme: appTheme(),
         title: 'Cine Movida',
         routerConfig: goRouter,
       ),
