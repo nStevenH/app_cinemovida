@@ -1,6 +1,7 @@
-import 'package:app_cinemovida/constants/strings.dart';
-import 'package:app_cinemovida/core/widgets/appbar_widget.dart';
-import 'package:app_cinemovida/routing/app_router.dart';
+import 'package:app_cinemovida/src/constants/sizes.dart';
+import 'package:app_cinemovida/src/routing/app_router.dart';
+import 'package:app_cinemovida/src/widgets/appbar_widget.dart';
+import 'package:app_cinemovida/src/constants/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -26,16 +27,23 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
       return;
     }
     setState(() => _selectedIndex = index);
-    if(index == 0){
-      context.goNamed(AppRoute.onDisplay.name);
-    } else if (index == 1){
-      context.goNamed(AppRoute.comingSoon.name);
-    } else if (index == 2){
-      context.goNamed(AppRoute.events.name);
-    } else if (index == 3){
-      context.goNamed(AppRoute.tickets.name);
-    } else if (index == 4){
-      context.goNamed(AppRoute.cinema.name);
+    switch (index) {
+      case 0:
+        context.goNamed(AppRoute.onDisplay.name);
+        break;
+      case 1:
+        context.goNamed(AppRoute.comingSoon.name);
+        break;
+      case 2:
+        context.goNamed(AppRoute.events.name);
+        break;
+      case 3:
+        context.goNamed(AppRoute.tickets.name);
+        break;
+      case 4:
+        context.goNamed(AppRoute.cinema.name);
+        break;
+      default:
     }
   }
 
@@ -43,7 +51,7 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(
-          title: Image.asset(logo, fit: BoxFit.contain, width: 24,),
+          title: Image.asset(logo, fit: BoxFit.contain, width: Sizes.p24,),
           icon: Icons.person_outline,
           onPressed: () {}
       ),
