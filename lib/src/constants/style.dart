@@ -13,9 +13,9 @@ var textTitleB = TextStyle(
 );
 var textTitleW = TextStyle(
   color: white,
-  fontSize: 16.sp,
+  fontSize: 14.sp,
   fontFamily: 'Roboto',
-  fontWeight: FontWeight.w600,
+  fontWeight: FontWeight.w500,
   letterSpacing: -0.15,
 );
 var textTitleG = TextStyle(
@@ -28,10 +28,16 @@ var textTitleG = TextStyle(
 // text title filter seance (size 16 - fontWeight 600 - letterSpacing -0.35)
 var textTitleWC = TextStyle(
     color: white,
-    fontSize: 16.sp,
+    fontSize: 12.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w600,
     letterSpacing: -0.35
+);
+var textDayB = TextStyle(
+    color: black,
+    fontSize: 12.sp,
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.w500
 );
 // text subtitle (size 14 - fontWeight 500)
 var textSubtitleB = TextStyle(
