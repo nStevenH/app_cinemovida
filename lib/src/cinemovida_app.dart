@@ -1,8 +1,7 @@
-import 'package:app_cinemovida/theme/theme_app.dart';
+import 'package:app_cinemovida/src/routing/app_router.dart';
+import 'package:app_cinemovida/src/theme/theme_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:app_cinemovida/routing/app_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends ConsumerWidget {
