@@ -1,12 +1,13 @@
-import 'package:app_cinemovida/routing/scaffold_with_bottom_nav_bar.dart';
-import 'package:app_cinemovida/src/features/movies/presentation/pages/cinema/screen/cinema_screen.dart';
-import 'package:app_cinemovida/src/features/movies/presentation/pages/coming-soon/screen/coming-soon_screen.dart';
-import 'package:app_cinemovida/src/features/movies/presentation/pages/display/screen/display_screen.dart';
-import 'package:app_cinemovida/src/features/movies/presentation/pages/events/screen/events_screen.dart';
-import 'package:app_cinemovida/src/features/movies/presentation/pages/tickets/tickets_details/tickets_screen.dart';
+import 'package:app_cinemovida/src/features/pages/coming-soon/presentation/screen/coming-soon_screen.dart';
+import 'package:app_cinemovida/src/features/pages/events/presentation/screen/events_screen.dart';
+import 'package:app_cinemovida/src/features/pages/localization/presentation/screen/cinema_screen.dart';
+import 'package:app_cinemovida/src/features/pages/movies/presentation/screen/display_screen.dart';
+import 'package:app_cinemovida/src/features/pages/tickets/presentation/screen/tickets_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+
+import 'package:app_cinemovida/src/routing/scaffold_app.dart';
 
 
 enum AppRoute {
@@ -75,7 +76,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
               name: AppRoute.cinema.name,
               pageBuilder: (context, state) => NoTransitionPage(
                 key: state.pageKey,
-                child: const LocalisationScreen(),
+                child: const LocalizationScreen(),
               ),
           ),
         ],
