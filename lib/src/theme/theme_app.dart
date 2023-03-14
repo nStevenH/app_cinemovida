@@ -1,4 +1,5 @@
-import 'package:app_cinemovida/constants/colors.dart';
+
+import 'package:app_cinemovida/src/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
