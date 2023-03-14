@@ -1,4 +1,6 @@
-import 'package:app_cinemovida/src/constants/sizes.dart';
+import 'package:app_cinemovida/src/widgets/choice_cinema_widget.dart';
+import 'package:app_cinemovida/src/widgets/filter_seance_widget.dart';
+import 'package:app_cinemovida/src/widgets/list_day_widget.dart';
 import 'package:flutter/material.dart';
 
 class OnDisplayScreen extends StatelessWidget {
@@ -7,15 +9,17 @@ class OnDisplayScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("À l'affiche...", style : TextStyle(fontSize: Sizes.p32),),
-            gapH16,
-            Text('Coming soon...', style: TextStyle(fontSize: Sizes.p24),),
-          ],
-        ),
+      body: Column(
+        children: const [
+          ChoiceCinemaWidget(),
+          ListDayWidget(),
+          FilterSeanceWidget(),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+
+        child: const Icon(Icons.read_more_outlined),
+        onPressed: () {},
       ),
     );
   }
