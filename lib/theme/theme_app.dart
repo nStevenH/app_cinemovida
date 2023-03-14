@@ -8,11 +8,11 @@ ThemeData appTheme() {
       backgroundColor: blue,
       elevation: 0,
       centerTitle: true,
-
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: blue,
       type: BottomNavigationBarType.fixed,
+      elevation: 0,
       unselectedIconTheme: const IconThemeData(color: icon),
       unselectedItemColor: textTertiary,
       unselectedLabelStyle: TextStyle(
