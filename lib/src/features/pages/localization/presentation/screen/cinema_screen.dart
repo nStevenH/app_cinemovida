@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 
 
-class LocalisationScreen extends StatelessWidget {
-  const LocalisationScreen({Key? key}) : super(key: key);
+class LocalizationScreen extends StatelessWidget {
+  const LocalizationScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
