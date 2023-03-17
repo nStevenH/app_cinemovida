@@ -1,6 +1,6 @@
-import 'package:app_cinemovida/src/widgets/choice_cinema_widget.dart';
-import 'package:app_cinemovida/src/widgets/filter_seance_widget.dart';
-import 'package:app_cinemovida/src/widgets/list_day_widget.dart';
+import 'package:app_cinemovida/src/common/widgets/choice_cinema_widget.dart';
+import 'package:app_cinemovida/src/common/widgets/filter_seance_widget.dart';
+import 'package:app_cinemovida/src/common/widgets/list_day_widget.dart';
 import 'package:flutter/material.dart';
 
 class OnDisplayScreen extends StatelessWidget {

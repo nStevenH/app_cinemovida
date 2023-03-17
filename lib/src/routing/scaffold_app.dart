@@ -1,6 +1,6 @@
+import 'package:app_cinemovida/src/common/widgets/appbar_widget.dart';
 import 'package:app_cinemovida/src/constants/sizes.dart';
 import 'package:app_cinemovida/src/routing/app_router.dart';
-import 'package:app_cinemovida/src/widgets/appbar_widget.dart';
 import 'package:app_cinemovida/src/constants/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -62,22 +62,27 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.movie_filter_outlined),
+            activeIcon: Icon(Icons.movie_filter),
             label: "À l'affiche",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today_outlined),
+            activeIcon: Icon(Icons.calendar_today),
             label: 'À venir',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.flag_outlined),
+            activeIcon: Icon(Icons.flag),
             label: 'Évenements',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.credit_card_outlined),
+            activeIcon: Icon(Icons.credit_card),
             label: 'Mes billets',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on_outlined),
+            activeIcon: Icon(Icons.location_on),
             label: 'Cinémas',
           ),
         ],
