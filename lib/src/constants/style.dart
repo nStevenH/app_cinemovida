@@ -67,9 +67,9 @@ var textSubtitleG = TextStyle(
 // text body (size 14 - fontWeight 400)
 var textBodyB = TextStyle(
     color: black,
-    fontSize: 14.sp,
+    fontSize: 12.sp,
     fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400
+    fontWeight: FontWeight.w500
 );
 var textBodyW = TextStyle(
     color: white,
