@@ -37,7 +37,13 @@ var textDayB = TextStyle(
     color: black,
     fontSize: 12.sp,
     fontFamily: 'Roboto',
-    fontWeight: FontWeight.w500
+    fontWeight: FontWeight.w700
+);
+var textDayW = TextStyle(
+    color: Colors.white,
+    fontSize: 12.sp,
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.w700
 );
 // text subtitle (size 14 - fontWeight 500)
 var textSubtitleB = TextStyle(
