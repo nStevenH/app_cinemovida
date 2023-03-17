@@ -12,7 +12,7 @@ class ChoiceCinemaWidget extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       color: yellow,
-      height: 35.h,
+      height: 35.w,
       child: Padding(
         padding: EdgeInsets.all(8.0.w),
         child: Stack(
@@ -23,10 +23,10 @@ class ChoiceCinemaWidget extends ConsumerWidget {
                 style: textTitleW,
               ),
             ),
-            Align(
+            const Align(
               alignment: Alignment.centerRight,
               child: Icon(
-                Icons.keyboard_arrow_down_outlined, size: 30.w,
+                Icons.keyboard_arrow_down_outlined,
                 color: icon,
               ),
             ),

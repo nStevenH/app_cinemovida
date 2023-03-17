@@ -11,14 +11,14 @@ class ListDayWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
-      height: 35.h,
+      height: 35.w,
       color: blue,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 180,
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.all(8.0.w),
+            padding: EdgeInsets.all(6.0.h),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -28,20 +28,20 @@ class ListDayWidget extends ConsumerWidget {
                     // Change of color when a day is selected
                   },
                   child: Container(
-                    width: 80.w,
-                    height: 25.w,
+                    width: 72.h,
+                    height: 21.w,
                     decoration: BoxDecoration(
-                      color: white,
-                      borderRadius: BorderRadius.circular(45),
+                      border: Border.all(
+                        color: white,
+                        width: 1,
+                      ),
+                      borderRadius: BorderRadius.circular(50.r),
                     ),
                     // Add format jour + date qui change en fonction de la date du jour
                     child: Center(
-                      child: Padding(
-                        padding: EdgeInsets.all(4.0.w),
-                        child: Text(
-                            'Mer 01 Mars',
-                            style: textDayB
-                        ),
+                      child: Text(
+                          'Mer 01 Mars',
+                          style: textDayW
                       ),
                     ),
                   ),
