@@ -34,6 +34,21 @@ ThemeData appTheme() {
       backgroundColor: blue,
       elevation: 4,
     ),
+    tabBarTheme: TabBarTheme(
+      indicatorSize: TabBarIndicatorSize.label,
+      indicatorColor: white,
+      labelColor: white,
+      labelStyle: TextStyle(
+        fontSize: 11.sp,
+        fontWeight: FontWeight.w500,
+      ),
+      unselectedLabelStyle: TextStyle(
+        fontSize: 11.sp,
+        fontWeight: FontWeight.w500,
+      ),
+      unselectedLabelColor: white,
+
+    ),
     fontFamily: 'Roboto',
     scaffoldBackgroundColor: background,
   );
