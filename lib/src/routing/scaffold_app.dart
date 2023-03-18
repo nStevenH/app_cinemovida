@@ -6,7 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class ScaffoldBottomNavBar extends StatefulWidget {
-  const ScaffoldBottomNavBar({Key? key, required this.child, this.appBar}) : super(key: key);
+  const ScaffoldBottomNavBar({
+    Key? key,
+    required this.child,
+    this.appBar
+  }) : super(key: key);
+
   final Widget child;
   final AppBar? appBar;
 
