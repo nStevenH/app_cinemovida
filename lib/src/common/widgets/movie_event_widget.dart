@@ -31,13 +31,15 @@ class EventMovieWidget extends StatelessWidget {
             ),
           ),
           gapH4,
-          Text('Les 4 Fantastiques',
+          Text(
+              'Les 4 Fantastiques',
               style: TextStyle(
                 fontSize: 10.sp,
                 color: black,
               )),
           gapH4,
-          Text('De benard dupond',
+          Text(
+              'De benard dupond',
               style: TextStyle(
                 fontSize: 10.sp,
                 color: grey,
