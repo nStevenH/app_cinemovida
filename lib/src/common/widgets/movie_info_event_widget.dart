@@ -25,7 +25,7 @@ class MovieInfoEventWidget extends StatelessWidget {
                   alignment: Alignment.topLeft,
                   imageUrl:
                       'https://image.tmdb.org/t/p/w500/6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg',
-                  fit: BoxFit.fitHeight,
+                  fit: BoxFit.cover,
                   placeholder: (context, url) =>
                       const CircularProgressIndicator(),
                   errorWidget: (context, url, error) => const Icon(Icons.error),
