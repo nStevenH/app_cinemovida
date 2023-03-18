@@ -12,6 +12,7 @@ class Sizes {
   static double p24 = 24.0.sp;
   static double p32 = 32.0.sp;
   static double p48 = 48.0.sp;
+  static double p56 = 56.0.sp;
   static double p64 = 64.0.sp;
 }
 class SizesH {
@@ -23,6 +24,7 @@ class SizesH {
   static double p24 = 24.0.h;
   static double p32 = 32.0.h;
   static double p48 = 48.0.h;
+  static double p56 = 56.0.h;
   static double p64 = 64.0.h;
 }
 
@@ -35,6 +37,7 @@ class SizesW {
   static double p24 = 24.0.w;
   static double p32 = 32.0.w;
   static double p48 = 48.0.w;
+  static double p56 = 56.0.w;
   static double p64 = 64.0.w;
 }
 
@@ -58,4 +61,5 @@ SizedBox gapH20 = SizedBox(height: SizesH.p20);
 SizedBox gapH24 = SizedBox(height: SizesH.p24);
 SizedBox gapH32 = SizedBox(height: SizesH.p32);
 SizedBox gapH48 = SizedBox(height: SizesH.p48);
+SizedBox gapH56 = SizedBox(height: SizesH.p56);
 SizedBox gapH64 = SizedBox(height: SizesH.p64);
