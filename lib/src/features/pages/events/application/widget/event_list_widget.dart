@@ -9,7 +9,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 class EventListWidget extends ConsumerWidget {
   const EventListWidget({
     Key? key,
+    required this.textTitle,
   }) : super(key: key);
+  final String textTitle;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -42,7 +44,7 @@ class EventListWidget extends ConsumerWidget {
               children: [
                 gapH4,
                 Text(
-                  'PRINTEMPS DU CINEMA',
+                  textTitle,
                   style: TextStyle(
                       fontSize: 12.sp,
                       color: black,
