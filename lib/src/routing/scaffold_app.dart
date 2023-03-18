@@ -52,7 +52,7 @@ class _ScaffoldBottomNavBarState extends State<ScaffoldBottomNavBar> {
     return Scaffold(
       appBar: AppBarWidget(
           title: Image.asset(logo, fit: BoxFit.contain, width: Sizes.p24,),
-          icon: Icons.person_outline,
+          icon: Icons.person,
           onPressed: () {}
       ),
       body: widget.child,
