@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:app_cinemovida/src/features/pages/tickets/domain/controller/tabbar_controller.dart';
+
 
 
 class TicketsScreen extends StatelessWidget {
@@ -7,13 +9,11 @@ class TicketsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: const [
-            Text('Mes billets')
-          ],
-        ),
-      ),
+      body: Stack(
+        children: const [
+          TabBarController(),
+        ],
+      )
     );
   }
 }
