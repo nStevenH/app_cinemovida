@@ -97,7 +97,6 @@ class ComingSoonScreen extends StatelessWidget {
               const MovieInfoEventWidget(),
             ],
           ),
-
           const ChoiceCinemaWidget(),
         ],
       ),
