@@ -31,7 +31,7 @@ class _TabBarControllerState extends State<TabBarController>
     return Scaffold(
       body: Container(
         color: yellow,
-        height: 35.w,
+        height: 45.h,
         child: TabBar(
           indicatorColor: white,
           controller: _tabController,

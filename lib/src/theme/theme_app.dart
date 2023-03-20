@@ -39,11 +39,11 @@ ThemeData appTheme() {
       indicatorColor: white,
       labelColor: white,
       labelStyle: TextStyle(
-        fontSize: 11.sp,
+        fontSize: 12.sp,
         fontWeight: FontWeight.w500,
       ),
       unselectedLabelStyle: TextStyle(
-        fontSize: 11.sp,
+        fontSize: 12.sp,
         fontWeight: FontWeight.w500,
       ),
       unselectedLabelColor: white,
