@@ -38,6 +38,7 @@ class _MonTabBarState extends State<MonTabBar>
             height: 45.h,
             child: TabBar(
               controller: _tabController,
+              indicatorColor: white,
               tabs: const [
                 Tab(
                   text: 'Mes réservations',
