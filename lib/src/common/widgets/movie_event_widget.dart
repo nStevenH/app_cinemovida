@@ -22,10 +22,10 @@ class EventMovieWidget extends StatelessWidget {
             onTap: () {},
             child: CachedNetworkImage(
               alignment: Alignment.topLeft,
-              width: 80,
+              width: 80.w,
               imageUrl:
                   'https://image.tmdb.org/t/p/w500/6CoRTJTmijhBLJTUNoVSUNxZMEI.jpg',
-              fit: BoxFit.fitHeight,
+              fit: BoxFit.cover,
               placeholder: (context, url) => const CircularProgressIndicator(),
               errorWidget: (context, url, error) => const Icon(Icons.error),
             ),
@@ -34,14 +34,14 @@ class EventMovieWidget extends StatelessWidget {
           Text(
               'Les 4 Fantastiques',
               style: TextStyle(
-                fontSize: 10.sp,
+                fontSize: Sizes.p10,
                 color: black,
               )),
           gapH4,
           Text(
               'De benard dupond',
               style: TextStyle(
-                fontSize: 10.sp,
+                fontSize: Sizes.p10,
                 color: grey,
               )),
         ],

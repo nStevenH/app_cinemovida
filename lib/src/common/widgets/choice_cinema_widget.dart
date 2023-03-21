@@ -1,4 +1,5 @@
 import 'package:app_cinemovida/src/constants/colors.dart';
+import 'package:app_cinemovida/src/constants/sizes.dart';
 import 'package:app_cinemovida/src/constants/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -14,7 +15,7 @@ class ChoiceCinemaWidget extends ConsumerWidget {
       color: yellow,
       height: 35.w,
       child: Padding(
-        padding: EdgeInsets.all(8.0.w),
+        padding: EdgeInsets.all(SizesR.p8),
         child: Stack(
           children: [
             Center(

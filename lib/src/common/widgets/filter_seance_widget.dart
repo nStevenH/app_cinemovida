@@ -10,7 +10,7 @@ class FilterSeanceWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: EdgeInsets.all(SizesR.p12),
       child: Container(
         color: yellow,
         height: 30.h,

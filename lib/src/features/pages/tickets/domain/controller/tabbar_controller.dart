@@ -1,16 +1,18 @@
-import 'package:flutter/material.dart';
 import 'package:app_cinemovida/src/constants/colors.dart';
+import 'package:app_cinemovida/src/constants/sizes.dart';
+import 'package:app_cinemovida/src/constants/style.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class TabBarController extends StatefulWidget {
-  const TabBarController({super.key});
+class MonTabBar extends StatefulWidget {
+  const MonTabBar({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _TabBarControllerState createState() => _TabBarControllerState();
+  _MonTabBarState createState() => _MonTabBarState();
 }
 
-class _TabBarControllerState extends State<TabBarController>
+class _MonTabBarState extends State<MonTabBar>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -29,18 +31,72 @@ class _TabBarControllerState extends State<TabBarController>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: yellow,
-        height: 45.h,
-        child: TabBar(
-          indicatorColor: white,
-          controller: _tabController,
-          padding: EdgeInsets.symmetric(horizontal: 8.0.w),
-          tabs: const [
-            Tab(text: 'Mes réservations'),
-            Tab(text: 'Mes réservations Passées',),
-          ],
-        ),
+      body: Column(
+        children: [
+          Container(
+            color: yellow,
+            height: 45.h,
+            child: TabBar(
+              controller: _tabController,
+              tabs: const [
+                Tab(
+                  text: 'Mes réservations',
+                ),
+                Tab(
+                  text: 'Mes réservations passées',
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: TabBarView(
+              controller: _tabController,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                        Icons.movie_creation_outlined,
+                        color: grey, size: 96
+                    ),
+                    gapH8,
+
+                    Column(
+                      children: [
+                        Text(
+                            "Retrouvez ici vos billets achetés sur l'application et",
+                          style: textSubtitleG,
+                        ),
+                        gapH4,
+                        Text('présentez les à votre arrivée en salle.',
+                          style: textSubtitleG,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                        Icons.movie_creation_outlined,
+                        color: grey,
+                        size: 96
+                    ),
+                    gapH8,
+                    Text('Aucune réservation disponible.',
+                      style: textSubtitleG,
+                    ),
+                    gapH16,
+                    Text('Retrouvez ici vos précédents achats de billets',
+                      style: textSubtitleG,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

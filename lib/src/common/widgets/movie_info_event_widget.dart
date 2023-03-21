@@ -11,10 +11,10 @@ class MovieInfoEventWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ReusableContainer(
-      height: 100.w,
+      height: 100.h,
       width: double.infinity,
       child: Padding(
-        padding: EdgeInsets.all(8.0.sp),
+        padding: EdgeInsets.all(SizesR.p8),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -38,7 +38,7 @@ class MovieInfoEventWidget extends StatelessWidget {
                     Text(
                       'Les 4 Fantastiques',
                       style: TextStyle(
-                        fontSize: 14.sp,
+                        fontSize: Sizes.p14,
                         color: black,
                       ),
                     ),
@@ -46,7 +46,7 @@ class MovieInfoEventWidget extends StatelessWidget {
                     RichText(
                       text: TextSpan(
                         style: TextStyle(
-                          fontSize: 12.sp,
+                          fontSize: Sizes.p12,
                         ),
                         children: const <TextSpan>[
                           TextSpan(
@@ -64,11 +64,11 @@ class MovieInfoEventWidget extends StatelessWidget {
                     ),
                     gapH4,
                     RichText(
-                      text: const TextSpan(
+                      text: TextSpan(
                         style: TextStyle(
-                          fontSize: 10,
+                          fontSize: Sizes.p10,
                         ),
-                        children: <TextSpan>[
+                        children: const <TextSpan>[
                           TextSpan(
                             text: 'De',
                             style: TextStyle(color: grey),
@@ -86,7 +86,7 @@ class MovieInfoEventWidget extends StatelessWidget {
                     Text(
                       '01h44 - Concert ',
                       style: TextStyle(
-                        fontSize: 12.sp,
+                        fontSize: Sizes.p12,
                         color: black,
                       ),
                     ),

@@ -1,3 +1,4 @@
+import 'package:app_cinemovida/src/constants/sizes.dart';
 import 'package:app_cinemovida/src/constants/weight.dart';
 import 'package:flutter/material.dart';
 
@@ -5,78 +6,78 @@ import 'package:app_cinemovida/src/constants/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // text title (size 16 - fontWeight 600 - letterSpacing -0.15)
-var textTitleB = TextStyle(
+final textTitleB = TextStyle(
     color: black,
     fontSize: 16.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w600,
     letterSpacing: -0.15);
-var textTitleW = TextStyle(
+final textTitleW = TextStyle(
   color: white,
   fontSize: 14.sp,
   fontFamily: 'Roboto',
   fontWeight: FontWeight.w500,
   letterSpacing: -0.15,
 );
-var textTitleG = TextStyle(
+final textTitleG = TextStyle(
     color: grey,
     fontSize: 16.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w600,
     letterSpacing: -0.15);
 // text title filter seance (size 16 - fontWeight 600 - letterSpacing -0.35)
-var textTitleWC = TextStyle(
+final textTitleWC = TextStyle(
     color: white,
     fontSize: 12.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w600,
     letterSpacing: -0.35);
-var textDayB = TextStyle(
+final textDayB = TextStyle(
     color: black,
     fontSize: 12.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w700);
-var textDayW = TextStyle(
+final textDayW = TextStyle(
     color: Colors.white,
     fontSize: 11.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w500,
     letterSpacing: 0.5);
 // text subtitle (size 14 - fontWeight 500)
-var textSubtitleB = TextStyle(
+final textSubtitleB = TextStyle(
     color: black,
-    fontSize: 14.sp,
+    fontSize: Sizes.p14,
     fontFamily: 'Roboto',
-    fontWeight: FontWeight.w500);
-var textSubtitleW = TextStyle(
+    fontWeight: medium);
+final textSubtitleW = TextStyle(
     color: white,
-    fontSize: 14.sp,
+    fontSize: Sizes.p14,
     fontFamily: 'Roboto',
-    fontWeight: FontWeight.w500);
-var textSubtitleG = TextStyle(
+    fontWeight: medium);
+final textSubtitleG = TextStyle(
     color: grey,
-    fontSize: 14.sp,
+    fontSize: Sizes.p14,
     fontFamily: 'Roboto',
-    fontWeight: FontWeight.w500,
+    fontWeight: medium,
     );
 // text body (size 14 - fontWeight 400)
-var textBodyB = TextStyle(
+final textBodyB = TextStyle(
     color: black,
     fontSize: 12.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w500);
-var textBodyW = TextStyle(
+final textBodyW = TextStyle(
     color: white,
     fontSize: 14.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w400);
-var textBodyG = TextStyle(
+final textBodyG = TextStyle(
     color: grey,
     fontSize: 12.sp,
     fontFamily: 'Roboto',
     fontWeight: FontWeight.w600,
     letterSpacing: -0.05);
-var textTarifs = TextStyle(
+final textTarifs = TextStyle(
     color: blue,
     fontSize: 12.sp,
     fontFamily: 'Roboto',

@@ -1,4 +1,5 @@
 import 'package:app_cinemovida/src/constants/colors.dart';
+import 'package:app_cinemovida/src/constants/sizes.dart';
 import 'package:app_cinemovida/src/constants/style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -11,14 +12,14 @@ class ListDayWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
-      height: 35.w,
+      height: 35.h,
       color: blue,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: 180,
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.all(6.0.h),
+            padding: EdgeInsets.all(SizesR.p4),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -28,14 +29,14 @@ class ListDayWidget extends ConsumerWidget {
                     // Change of color when a day is selected
                   },
                   child: Container(
-                    width: 72.h,
-                    height: 21.w,
+                    width: 76.w,
+                    height: 21.h,
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: white,
                         width: 1,
                       ),
-                      borderRadius: BorderRadius.circular(50.r),
+                      borderRadius: BorderRadius.circular(SizesR.p30),
                     ),
                     // Add format jour + date qui change en fonction de la date du jour
                     child: Center(

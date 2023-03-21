@@ -11,7 +11,7 @@ class TicketsScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: const [
-          TabBarController(),
+          MonTabBar(),
         ],
       )
     );
