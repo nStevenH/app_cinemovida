@@ -18,23 +18,23 @@ class ComingSoonScreen extends StatelessWidget {
         children: [
           ListView(
             children: [
-              gapH32,
+              gapH30,
               ReusableContainer(
                 color: yellow,
-                height: 28.w,
-                padding: 8.sp,
+                height: 28.h,
+                padding: SizesR.p8,
                 width: double.infinity,
                 child: Text('LES PLUS ATTENDUS', style: textTitleWC),
               ),
               const EventMovieWidget(),
               ReusableContainer(
                 color: const Color(0xFFEAEAEA),
-                height: 20.w,
+                height: 20.h,
                 width: double.infinity,
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: EdgeInsets.symmetric(horizontal: SizesW.p8),
                     child: Text(
                       '22 Mars 2022',
                       style: textBodyB,
@@ -45,12 +45,12 @@ class ComingSoonScreen extends StatelessWidget {
               const MovieInfoEventWidget(),
               ReusableContainer(
                 color: const Color(0xFFEAEAEA),
-                height: 20.w,
+                height: 20.h,
                 width: double.infinity,
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: EdgeInsets.symmetric(horizontal: SizesW.p8),
                     child: Text(
                       '23 Mars 2023',
                       style: textBodyB,
@@ -63,12 +63,12 @@ class ComingSoonScreen extends StatelessWidget {
               const MovieInfoEventWidget(),
               ReusableContainer(
                 color: const Color(0xFFEAEAEA),
-                height: 20.w,
+                height: 20.h,
                 width: double.infinity,
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: EdgeInsets.symmetric(horizontal: SizesW.p8),
                     child: Text(
                       '29 Mars 2023',
                       style: textBodyB,
@@ -81,12 +81,12 @@ class ComingSoonScreen extends StatelessWidget {
               const MovieInfoEventWidget(),
               ReusableContainer(
                 color: const Color(0xFFEAEAEA),
-                height: 20.w,
+                height: 20.h,
                 width: double.infinity,
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: EdgeInsets.symmetric(horizontal: SizesW.p8),
                     child: Text(
                       '04 Avril 2023',
                       style: textBodyB,
