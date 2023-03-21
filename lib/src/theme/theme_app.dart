@@ -1,7 +1,8 @@
 
 import 'package:app_cinemovida/src/constants/colors.dart';
+import 'package:app_cinemovida/src/constants/sizes.dart';
+import 'package:app_cinemovida/src/constants/weight.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ThemeData appTheme() {
   return ThemeData(
@@ -17,17 +18,17 @@ ThemeData appTheme() {
       unselectedIconTheme: const IconThemeData(color: icon),
       unselectedItemColor: textTertiary,
       unselectedLabelStyle: TextStyle(
-        color: Colors.white,
-        fontSize: 10.sp,
+        color: white,
+        fontSize: Sizes.p10,
         fontFamily: 'roboto',
-        fontWeight: FontWeight.w500,
+        fontWeight: medium,
       ),
       selectedItemColor: yellow,
       selectedLabelStyle: TextStyle(
         color: textSecondary,
-        fontSize: 10.sp,
+        fontSize: Sizes.p10,
         fontFamily: 'roboto',
-        fontWeight: FontWeight.w500,
+        fontWeight: medium,
       ),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -39,15 +40,14 @@ ThemeData appTheme() {
       indicatorColor: white,
       labelColor: white,
       labelStyle: TextStyle(
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w500,
+        fontSize: Sizes.p12,
+        fontWeight: medium,
       ),
       unselectedLabelStyle: TextStyle(
-        fontSize: 12.sp,
-        fontWeight: FontWeight.w500,
+        fontSize: Sizes.p12,
+        fontWeight: medium,
       ),
       unselectedLabelColor: white,
-
     ),
     fontFamily: 'Roboto',
     scaffoldBackgroundColor: background,
