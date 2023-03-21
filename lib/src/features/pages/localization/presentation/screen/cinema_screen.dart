@@ -21,96 +21,89 @@ class LocalizationScreen extends StatelessWidget {
               Container(
                 height: 60.h,
                 width: 1.sw,
+                padding: EdgeInsets.all(SizesR.p8),
                 decoration: BoxDecoration(
                   color: white,
                   border: Border.all(
                     color: divider,
-                    width: 1,
+                    width: 0.5,
                   ),
                 ),
-                child: Padding(
-                  padding: EdgeInsets.all(8.0.sp),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "ZAC du Mas Balande, Route d'Argeles, 66000 Perpignan",
-                            style: textBodyG,
-                          ),
-                        ],
-                      ),
-                      gapH8,
-                      SizedBox(
-                        width: 1.sw,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              height: 21.h,
-                              width: 160.w,
-                              color: black,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  const Icon(
-                                    Icons.location_on,
-                                    color: icon,
-                                    size: 14,
-                                  ),
-                                  gapW4,
-                                  Text(
-                                    'ITINÉRAIRE',
-                                    style: textDayW,
-                                  ),
-                                ],
-                              ),
-                            ),
-                            gapW4,
-                            Container(
-                              height: 21.h,
-                              width: 160.w,
-                              color: black,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  const FaIcon(FontAwesomeIcons.pen, color: icon, size: 12),
-                                  gapW4,
-                                  Text(
-                                    'CONTACT',
-                                    style: textDayW,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "ZAC du Mas Balande, Route d'Argeles, 66000 Perpignan",
+                          style: textBodyG,
                         ),
-                      ),
-                    ],
-                  ),
+                      ],
+                    ),
+                    gapH4,
+                    Row(
+                      children: [
+                        Container(
+                          height: 23.h,
+                          width: 0.45.sw,
+                          color: black,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.map,
+                                color: icon,
+                                size: Sizes.p14,
+                              ),
+                              gapW4,
+                              Text(
+                                'ITINÉRAIRE',
+                                style: textDayW,
+                              ),
+                            ],
+                          ),
+                        ),
+                        gapW16,
+                        Container(
+                          height: 23.h,
+                          width: 0.45.sw,
+                          color: black,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.pen,
+                                color: icon,
+                                size: Sizes.p12,
+                              ),
+                              gapW4,
+                              Text(
+                                'CONTACT',
+                                style: textDayW,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
               gapH8,
-              const Divider(
-                indent: 16,
-                endIndent: 16,
+              Divider(
+                indent: Sizes.p16,
+                endIndent: Sizes.p16,
                 color: divider,
-                thickness: 1.5,
+                thickness: 1,
               ),
+              gapH8,
               ReusableContainer(
                 color: const Color(0xFFEAEAEA),
-                height: 20.w,
-                width: double.infinity,
+                height: 30.h,
+                width: 1.sw,
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    padding: EdgeInsets.all(SizesR.p8),
                     child: Text(
                       'Tarifs',
                       style: textTarifs,
@@ -118,73 +111,63 @@ class LocalizationScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              gapH8,
               Container(
                 height: 60.h,
                 width: 1.sw,
-                decoration: BoxDecoration(
-                  color: white,
-                  border: Border.all(
-                    color: divider,
-                    width: 1,
-                  ),
-                ),
-                child: Padding(
-                  padding: EdgeInsets.all(8.0.sp),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        width: 1.sw,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              height: 25.h,
-                              width: 160.w,
-                              color: black,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Icon(Icons.euro, color: icon, size: 14.sp),
-                                  gapW4,
-                                  Text(
-                                    'NOS TARIFS',
-                                    style: textDayW,
-                                  ),
-                                ],
+                padding: EdgeInsets.all(SizesR.p8),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 32.h,
+                          width: 0.45.sw,
+                          color: black,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.euro, color: icon, size: Sizes.p14),
+                              gapW4,
+                              Text(
+                                'NOS TARIFS',
+                                style: textDayW,
                               ),
-                            ),
-                            gapW4,
-                            Container(
-                              height: 25.h,
-                              width: 160.w,
-                              color: black,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  const FaIcon(
-                                    FontAwesomeIcons.starOfLife,
-                                    color: icon,
-                                    size: 12,
-                                  ),
-                                  gapW4,
-                                  Text(
-                                    'OFFRES SPÉCIALES',
-                                    style: textDayW,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
+                        gapW16,
+                        Container(
+                          height: 32.h,
+                          width: 0.45.sw,
+                          color: black,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.starOfLife,
+                                color: icon,
+                                size: Sizes.p12,
+                              ),
+                              gapW4,
+                              Text(
+                                'OFFRES SPÉCIALES',
+                                style: textDayW,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
+              ),
+              gapH64,
+              Divider(
+                indent: Sizes.p16,
+                endIndent: Sizes.p16,
+                color: divider,
+                thickness: 0.5,
               ),
             ],
           ),
