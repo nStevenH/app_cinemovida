@@ -1,3 +1,4 @@
+import 'package:app_cinemovida/src/constants/weight.dart';
 import 'package:flutter/material.dart';
 
 import 'package:app_cinemovida/src/constants/colors.dart';
@@ -79,5 +80,5 @@ var textTarifs = TextStyle(
     color: blue,
     fontSize: 12.sp,
     fontFamily: 'Roboto',
-    fontWeight: FontWeight.w500,
+    fontWeight: medium,
     letterSpacing: -0.20);
