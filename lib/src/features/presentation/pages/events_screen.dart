@@ -1,6 +1,7 @@
-import 'package:app_cinemovida/src/features/pages/events/application/widget/event_list_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/choice_cinema_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/event_list_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:app_cinemovida/src/common/widgets/choice_cinema_widget.dart';
+
 import 'package:app_cinemovida/src/constants/colors.dart';
 import 'package:app_cinemovida/src/constants/sizes.dart';
 

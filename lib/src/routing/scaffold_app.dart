@@ -1,5 +1,5 @@
-import 'package:app_cinemovida/src/common/widgets/appbar_widget.dart';
 import 'package:app_cinemovida/src/constants/sizes.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/appbar_widget.dart';
 import 'package:app_cinemovida/src/routing/app_router.dart';
 import 'package:app_cinemovida/src/constants/strings.dart';
 import 'package:flutter/material.dart';

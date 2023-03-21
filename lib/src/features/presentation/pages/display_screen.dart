@@ -1,8 +1,8 @@
-import 'package:app_cinemovida/src/common/widgets/choice_cinema_widget.dart';
-import 'package:app_cinemovida/src/common/widgets/filter_seance_widget.dart';
-import 'package:app_cinemovida/src/common/widgets/list_day_widget.dart';
-import 'package:app_cinemovida/src/common/widgets/movie_info_event_widget.dart';
 import 'package:app_cinemovida/src/constants/sizes.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/choice_cinema_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/filter_seance_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/list_day_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/movie_info_event_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

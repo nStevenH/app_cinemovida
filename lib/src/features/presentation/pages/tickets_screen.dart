@@ -1,5 +1,6 @@
+import 'package:app_cinemovida/src/features/presentation/widgets/TabBar_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:app_cinemovida/src/features/pages/tickets/domain/controller/tabbar_controller.dart';
+
 
 
 

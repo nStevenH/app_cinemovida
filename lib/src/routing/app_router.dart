@@ -1,13 +1,13 @@
-import 'package:app_cinemovida/src/features/pages/coming-soon/presentation/screen/coming-soon_screen.dart';
-import 'package:app_cinemovida/src/features/pages/events/presentation/screen/events_screen.dart';
-import 'package:app_cinemovida/src/features/pages/localization/presentation/screen/cinema_screen.dart';
-import 'package:app_cinemovida/src/features/pages/movies/presentation/screen/display_screen.dart';
-import 'package:app_cinemovida/src/features/pages/tickets/presentation/screen/tickets_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
 import 'package:app_cinemovida/src/routing/scaffold_app.dart';
+import 'package:app_cinemovida/src/features/presentation/pages/cinema_screen.dart';
+import 'package:app_cinemovida/src/features/presentation/pages/coming-soon_screen.dart';
+import 'package:app_cinemovida/src/features/presentation/pages/display_screen.dart';
+import 'package:app_cinemovida/src/features/presentation/pages/events_screen.dart';
+import 'package:app_cinemovida/src/features/presentation/pages/tickets_screen.dart';
+
 
 
 enum AppRoute {

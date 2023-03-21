@@ -1,10 +1,10 @@
 import 'package:app_cinemovida/src/common/components/container_reusable.dart';
-import 'package:app_cinemovida/src/common/widgets/choice_cinema_widget.dart';
-import 'package:app_cinemovida/src/common/widgets/movie_event_widget.dart';
-import 'package:app_cinemovida/src/common/widgets/movie_info_event_widget.dart';
 import 'package:app_cinemovida/src/constants/colors.dart';
 import 'package:app_cinemovida/src/constants/sizes.dart';
 import 'package:app_cinemovida/src/constants/style.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/choice_cinema_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/movie_event_widget.dart';
+import 'package:app_cinemovida/src/features/presentation/widgets/movie_info_event_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
